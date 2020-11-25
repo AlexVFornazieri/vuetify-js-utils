@@ -25,7 +25,8 @@ export default {
           return regex.test(v) || 'Apenas letras minúsculas, numeros e hifens são permitidos'
         },
         cpf: v => checkCpf(v) || 'CPF inválido.',
-        cnpj: v => checkCnpj(v) || 'CNPJ inválido.'
+        cnpj: v => checkCnpj(v) || 'CNPJ inválido.',
+        cpfOrCnpj: v => checkCnpj(v) || checkCnpj(v) || 'CPF ou CNPJ inválido.'
       }
     }
   }
