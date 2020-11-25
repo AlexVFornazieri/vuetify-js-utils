@@ -26,7 +26,7 @@ export default {
         },
         cpf: v => checkCpf(v) || 'CPF inválido.',
         cnpj: v => checkCnpj(v) || 'CNPJ inválido.',
-        cpfOrCnpj: v => checkCnpj(v) || checkCnpj(v) || 'CPF ou CNPJ inválido.'
+        cpfOrCnpj: v => checkCpf(v) || checkCnpj(v) || 'CPF ou CNPJ inválido.'
       }
     }
   }
