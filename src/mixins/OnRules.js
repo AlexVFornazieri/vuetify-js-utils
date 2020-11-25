@@ -7,7 +7,7 @@ const minLenght = (min, msg) => v => (
 
 const maxLenght = (max, msg) => v => (
   (v && v.toString().length <= max) || msg
-),
+)
 
 export default {
   computed: {
@@ -22,8 +22,7 @@ export default {
         minLenght,
         maxLenght,
         id: (v) => {
-          const regex = new RegExp('^[0-9a-z-]+$')
-          return regex.test(v) || 'Apenas letras minúsculas, numeros e hifens são permitidos'
+          return /^[0-9a-z-]+$/.test(v) || 'Apenas letras minúsculas, numeros e hifens são permitidos'
         },
         cpf: v => checkCpf(v) || 'CPF inválido.',
         cnpj: v => checkCnpj(v) || 'CNPJ inválido.',
