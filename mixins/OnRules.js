@@ -3,7 +3,8 @@ import checkCpf from '~/utils/checkCpf'
 
 const minLenght = (min, msg) => v => (
   (v && v.toString().length >= min) || msg
-),
+)
+
 const maxLenght = (max, msg) => v => (
   (v && v.toString().length <= max) || msg
 ),
