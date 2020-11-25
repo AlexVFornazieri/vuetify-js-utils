@@ -3,8 +3,6 @@
   "version": "0.0.2",
   "description": "A utils packages to Vuetify/Nuxt to Brazilian projects.",
   "license": "MIT",
-  "private": false,
-  "dependencies": {
-    "np": "^7.0.0"
-  }
+  "repository": "https://github.com/AlexVFornazieri/vuetify-js-utils",
+  "private": false
 }
