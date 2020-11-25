@@ -1,23 +1,12 @@
 {
   "name": "vuetify-js-utils",
   "version": "0.1.0",
-  "description": "A utils packages to Vuetify/Nuxt to Brazilian projects.",
+  "description": "A utils packages to Vuetify/Nuxt to Brazil.",
   "license": "MIT",
   "repository": "https://github.com/AlexVFornazieri/vuetify-js-utils",
   "private": false,
-  "main": "lib/index.js",
-  "scripts": {
-    "prepublish": "babel src --out-dir lib"
-  },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
-  },
+  "main": "src/index.js",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-preset-es2015": "^6.24.1",
     "eslint": "7.12.1",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "2.22.1",
