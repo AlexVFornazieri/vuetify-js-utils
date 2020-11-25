@@ -1,0 +1,10 @@
+{
+  "name": "vuetify-js-utils",
+  "version": "0.0.1",
+  "description": "A utils packages to Vuetify/Nuxt to Brazilian projects.",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "np": "^7.0.0"
+  }
+}
