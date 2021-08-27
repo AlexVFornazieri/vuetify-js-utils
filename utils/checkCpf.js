@@ -1,4 +1,4 @@
-const checkCpf = (cpf) => {
+export default function () {
   let soma = 0
   let resto
   const strCPF = cpf.replace(/[^0-9]+/g, '')

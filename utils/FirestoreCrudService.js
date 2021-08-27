@@ -7,7 +7,7 @@ import { contributeWarnLog } from '.'
 /**
  * Abstract Service for CRUD Operations in Firestore
  */
-export class FirestoreCrudService {
+export default class {
   constructor (serviceName) {
     this.serviceName = serviceName
     this.collection = db.collection(serviceName)

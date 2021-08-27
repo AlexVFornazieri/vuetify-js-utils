@@ -1,5 +1,4 @@
-import checkCnpj from '../utils/checkCnpj'
-import checkCpf from '../utils/checkCpf'
+import { checkCnpj, checkCpf } from "../utils"
 
 const minLenght = (min, msg) => v => (
   (v && v.toString().length >= min) || msg

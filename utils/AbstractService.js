@@ -6,7 +6,7 @@ import { API_URL } from './apiURL'
 /**
  * Abstract Service for Cloud Function/Auth Token require requests API
  */
-export default class AbstracService {
+export default class {
   /**
    * New services Constuctor, passs endpoint entrie for actions
    * @param {String} endpoint

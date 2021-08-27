@@ -1,4 +1,4 @@
-const checkCnpj = (cnpj) => {
+export default function checkCnpj () {
   cnpj = cnpj.replace(/[^0-9]+/g, '')
 
   if (cnpj === '') { return false }
