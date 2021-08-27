@@ -14,7 +14,7 @@ npm install --save vuetify-js-utils
 
 ```vue
 <template>
-  <v-textfield label="CPF/CNPJ" :rules="[rules.required, rules.cpfOrCnpj] />
+  <v-textfield label="CPF/CNPJ" :rules="[rules.required, rules.cpfOrCnpj]" />
 </template>
 
 <script>
