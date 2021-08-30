@@ -1,7 +1,6 @@
 import axios from 'axios'
 import Cookies from 'js-cookie'
 import cookieparser from 'cookieparser'
-import { API_URL } from './apiURL'
 
 /**
  * Abstract Service for Cloud Function/Auth Token require requests API
@@ -20,7 +19,7 @@ export default class {
   request (contentType = 'application/json') {
     let config = {}
 
-    this.baseUrl = this.baseUrl || API_URL
+    this.baseUrl = this.baseUrl || process.env.API_URL
 
     // SSR
     if (typeof this.req === 'object') {
