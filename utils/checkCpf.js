@@ -18,5 +18,3 @@ export default function () {
   if (resto !== parseInt(strCPF.substring(10, 11))) { return false }
   return true
 }
-
-export default checkCpf

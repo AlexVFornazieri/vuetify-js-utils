@@ -1,8 +1,7 @@
 import { isString } from 'lodash'
 import db from '~/firebase/firestore'
 import { auth } from '~/firebase/fireauth'
-import { planeObject } from '~/utils'
-import { contributeWarnLog } from '.'
+import { contributeWarnLog, planeObject } from '.'
 
 /**
  * Abstract Service for CRUD Operations in Firestore

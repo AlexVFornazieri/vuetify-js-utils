@@ -43,5 +43,3 @@ export default function checkCnpj () {
 
   return true
 }
-
-export default checkCnpj
