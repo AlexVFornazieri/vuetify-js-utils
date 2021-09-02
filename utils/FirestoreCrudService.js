@@ -138,11 +138,10 @@ export default class {
         query = query.where(params.activeProp, '==', params.active)
       }
       if (params.limit) { query = query.limit(params.limit) }
-      console.log(params)
       if (params.search) {
         const hits = await this.search(params.query)
         hits.forEach((doc) => {
-          items.push(doc)
+          items.push({_id: doc.objectID, ...doc})
         })
       } else {
         const querySnapshot = await query.get()
