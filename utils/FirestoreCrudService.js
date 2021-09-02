@@ -164,7 +164,6 @@ export default class {
       // Perform an Algolia search:
       // https://www.algolia.com/doc/api-reference/api-methods/search/
       const response = await index.search({ query })
-      console.log(response)
       return response.hits
     } catch (err) {
       console.warn('Can\'t perform search')
