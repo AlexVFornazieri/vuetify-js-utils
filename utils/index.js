@@ -1,4 +1,3 @@
-import FirestoreCrudService from './FirestoreCrudService'
 import AbstractService from './AbstractService'
 import copyToClipboard from './copyToClipboard'
 import checkCnpj from './checkCnpj'
@@ -10,12 +9,38 @@ export function planeObject (data) {
   return JSON.parse(JSON.stringify(data))
 }
 
+/**
+* Get YouTube ID from various YouTube URL
+* @author: takien
+* @url: http://takien.com
+*/
+export function getYoutubeId (url) {
+  let ID = ''
+  url = url.replace(/(>|<)/gi, '').split(/(vi\/|v=|\/v\/|youtu\.be\/|\/embed\/)/)
+  if (url[2] !== undefined) {
+    ID = url[2].split(/[^0-9a-z_-]/i)
+    ID = ID[0]
+  } else {
+    ID = url
+  }
+  return ID
+}
+
+export function getCurrentURI () {
+  const actualHost = window.location.protocol + '//' + window.location.hostname + (window.location.hostname === 'localhost' ? (':' + window.location.port) : '')
+  return actualHost
+}
+
+export function getUrlParam (name) {
+  const urlParams = new URLSearchParams(window.location.search)
+  return urlParams.get(name)
+}
+
 export function contributeWarnLog() {
   console.warn('>> Did you have any ideas or needs? Contribute https://github.com/AlexVFornazieri/vuetify-js-utils')
 }
 
 export {
-  FirestoreCrudService,
   AbstractService,
   arraySearch,
   copyToClipboard,

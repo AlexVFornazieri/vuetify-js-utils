@@ -2,7 +2,7 @@
  * Copy a text to clipboard keeping user selection
  * @param {String} text
  */
-export default function () {
+export default function (text='') {
   const el = document.createElement('textarea') // Create a <textarea> element
   el.value = text // Set its value to the string that you want copied
   el.setAttribute('readonly', '') // Make it readonly to be tamper-proof
