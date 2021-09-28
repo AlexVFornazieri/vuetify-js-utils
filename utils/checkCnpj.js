@@ -1,4 +1,4 @@
-export default function checkCnpj () {
+export default function checkCnpj (cnpj) {
   cnpj = cnpj.replace(/[^0-9]+/g, '')
 
   if (cnpj === '') { return false }

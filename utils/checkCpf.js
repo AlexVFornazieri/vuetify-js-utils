@@ -1,4 +1,4 @@
-export default function () {
+export default function (cpf) {
   let soma = 0
   let resto
   const strCPF = cpf.replace(/[^0-9]+/g, '')
