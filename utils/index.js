@@ -36,10 +36,6 @@ export function getUrlParam (name) {
   return urlParams.get(name)
 }
 
-export function contributeWarnLog() {
-  console.warn('>> Did you have any ideas or needs? Contribute https://github.com/AlexVFornazieri/vuetify-js-utils')
-}
-
 export {
   AbstractService,
   arraySearch,
