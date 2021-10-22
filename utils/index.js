@@ -9,6 +9,18 @@ export function planeObject (data) {
   return JSON.parse(JSON.stringify(data))
 }
 
+export function dateString (date) {
+  return date.toISOString().split('T')[0]
+}
+
+export function getPeriodLast (days = 30) {
+  const now = new Date()
+  const end = dateString(now)
+  const before = new Date(now.setDate(now.getDate() - days))
+  const start = dateString(before)
+  return { start, end }
+}
+
 /**
 * Get YouTube ID from various YouTube URL
 * @author: takien
