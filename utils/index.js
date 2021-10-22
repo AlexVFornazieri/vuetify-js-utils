@@ -1,4 +1,3 @@
-import AbstractService from './AbstractService'
 import copyToClipboard from './copyToClipboard'
 import checkCnpj from './checkCnpj'
 import checkCpf from './checkCpf'
@@ -49,7 +48,6 @@ export function getUrlParam (name) {
 }
 
 export {
-  AbstractService,
   arraySearch,
   copyToClipboard,
   checkCnpj,
