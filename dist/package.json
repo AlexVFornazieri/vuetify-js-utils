@@ -1,0 +1,11 @@
+{
+  "name": "vuetify-js-utils",
+  "version": "0.5.6",
+  "description": "A utils packages to Vuetify/Nuxt to Brazil and more.",
+  "license": "MIT",
+  "repository": "https://github.com/AlexVFornazieri/vuetify-js-utils",
+  "private": false,
+  "main": "./index.js",
+  "devDependencies": {},
+  "dependencies": {}
+}
