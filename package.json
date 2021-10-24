@@ -1,13 +1,14 @@
 {
   "name": "vuetify-js-utils",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A utils packages to Vuetify/Nuxt to Brazil and more.",
   "license": "MIT",
   "repository": "https://github.com/AlexVFornazieri/vuetify-js-utils",
   "private": false,
   "main": "dist/index.js",
   "files": [
-    "dist"
+    "dist/*.js",
+    "dist/**/&.js"
   ],
   "scripts": {
     "build": "npx babel src --out-dir dist",
