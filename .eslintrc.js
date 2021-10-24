@@ -1,19 +1,23 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
   extends: [
     'plugin:vue/essential',
-    'standard'
+    'standard',
+  ],
+  excludes: [
+    '/dist'
   ],
   parserOptions: {
     ecmaVersion: 12,
-    sourceType: 'module'
+    sourceType: 'module',
   },
   plugins: [
-    'vue'
+    'vue',
   ],
   rules: {
-  }
+    'comma-dangle': ['error', 'always-multiline'], // https://github.com/eslint/eslint/issues/11310
+  },
 }

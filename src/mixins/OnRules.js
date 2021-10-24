@@ -1,4 +1,4 @@
-import { checkCnpj, checkCpf } from "../utils"
+import { checkCnpj, checkCpf } from '../utils'
 
 const minLenght = (min, msg) => v => (
   (v && v.toString().length >= min) || msg
@@ -25,8 +25,8 @@ export default {
         },
         cpf: v => checkCpf(v) || 'CPF inválido.',
         cnpj: v => checkCnpj(v) || 'CNPJ inválido.',
-        cpfOrCnpj: v => checkCpf(v) || checkCnpj(v) || 'CPF ou CNPJ inválido.'
+        cpfOrCnpj: v => checkCpf(v) || checkCnpj(v) || 'CPF ou CNPJ inválido.',
       }
-    }
-  }
+    },
+  },
 }
