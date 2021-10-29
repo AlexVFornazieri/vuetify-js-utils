@@ -1,6 +1,6 @@
 {
   "name": "vuetify-js-utils",
-  "version": "0.5.2",
+  "version": "0.5.8",
   "description": "A utils packages to Vuetify/Nuxt to Brazil and more.",
   "license": "MIT",
   "repository": "https://github.com/AlexVFornazieri/vuetify-js-utils",
@@ -14,6 +14,8 @@
     "build": "npx babel src --out-dir dist",
     "start": "npx babel src --watch --out-dir dist"
   },
+  "prepublishOnly": "npm run build && cp -r ./lib/* . && rm -rf ./lib",
+  "postpublish": "git clean -fd",
   "devDependencies": {
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.8",
