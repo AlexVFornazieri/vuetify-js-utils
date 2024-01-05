@@ -1,6 +1,7 @@
 # Vuetify and JS utils pack
 
 This package have Vuetify/Nuxt an JS utils funcions and mixins, more especifily (but not only) for braziliam (pt-BR) projects.
+
 Esse projeto contem codigos utils incluindo mixers para Vuetify/Nuxt, mas especificamente (mas não exclusivamente) para projetos brasileros.
 
 ## Install
@@ -72,7 +73,7 @@ npm install --save vuetify-js-utils
   - Retorna o valor de um parrametro Query String presente na URL.
 
 - **slugify(String: text)**
-  - Retorna uma strin no formato kebabCase removendo todos os acentos (Ex.: "Olá mundo" =>  "ola-mundo"). Muito util para ser usada de na criação de IDs e SEO-Friendly URLs.
+  - Retorna uma string no formato kebabCase removendo todos os acentos (Ex.: "Olá mundo" =>  "ola-mundo"). Muito util para ser usada de na criação de IDs e SEO-Friendly URLs.
 
 ## TODO
 - Create a exmple/doc page for developments test proposes.
